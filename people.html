@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="People in the Gradient Spaces Lab at Stanford."
+    >
+    <title>People | Gradient Spaces Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Gradient Spaces</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" title="Open navigation">
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="people.html">People</a>
+        <a href="research.html">Research</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#connect">Connect</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Lab</p>
+          <h1>People</h1>
+          <p class="lead">
+            A cross-disciplinary group learning from visual data, built environments, design practice,
+            and computational systems.
+          </p>
+        </div>
+        <img
+          src="https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/card_1900x950/public/media/image/group2_0.jpg?h=303d650b&amp;itok=mmmso5js"
+          alt="Gradient Spaces group photo"
+        >
+      </section>
+
+      <section class="section" aria-labelledby="faculty-title">
+        <div class="section-heading">
+          <p class="section-kicker">Faculty</p>
+          <h2 id="faculty-title">Principal investigator</h2>
+        </div>
+        <div id="faculty-list"></div>
+      </section>
+
+      <section class="section" aria-labelledby="members-title">
+        <div class="section-heading inline-heading">
+          <div>
+            <p class="section-kicker">Members</p>
+            <h2 id="members-title">Current group</h2>
+          </div>
+          <a class="text-link" href="mailto:iroarmeni@stanford.edu">Join the lab</a>
+        </div>
+
+        <div class="people-grid" id="current-people"></div>
+      </section>
+
+      <section class="section" aria-labelledby="alumni-title">
+        <div class="section-heading">
+          <p class="section-kicker">Alumni &amp; Visitors</p>
+          <h2 id="alumni-title">Past members</h2>
+        </div>
+        <div class="people-grid compact-people-grid" id="alumni-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Gradient Spaces Research Group</p>
+      <p>Stanford University</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

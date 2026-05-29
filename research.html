@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Research themes and selected projects from the Gradient Spaces Lab at Stanford."
+    >
+    <title>Research | Gradient Spaces Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Gradient Spaces</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" title="Open navigation">
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="people.html">People</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#connect">Connect</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero research-hero">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h1>Spatial intelligence for the real world.</h1>
+          <p class="lead">
+            We create methods that connect images, video, geometry, simulation, and human intent to make
+            adaptive environments more measurable, generative, and useful.
+          </p>
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="Research summary">
+        <div>
+          <strong>26</strong>
+          <span>publications</span>
+        </div>
+        <div>
+          <strong>5</strong>
+          <span>open datasets</span>
+        </div>
+        <div>
+          <strong>2023-2026</strong>
+          <span>current archive</span>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="themes-title">
+        <div class="section-heading">
+          <p class="section-kicker">Themes</p>
+          <h2 id="themes-title">What the site can grow around</h2>
+        </div>
+        <div class="theme-grid">
+          <article>
+            <h3>Dynamic 3D Scenes</h3>
+            <p>Perception systems for spaces that change across time, objects, people, and use.</p>
+          </article>
+          <article>
+            <h3>In-the-Wild Reconstruction</h3>
+            <p>Robust 3D methods that survive unconstrained sensors, videos, sites, and weather.</p>
+          </article>
+          <article>
+            <h3>Mixed Reality</h3>
+            <p>Interfaces and representations that bridge physical environments and digital design.</p>
+          </article>
+          <article>
+            <h3>Sustainable Environments</h3>
+            <p>Data-driven tools for adaptive, equitable, and resource-aware spaces.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-kicker">Recent highlights</p>
+          <h2 id="projects-title">Featured projects</h2>
+        </div>
+        <div class="project-grid" id="featured-projects"></div>
+      </section>
+
+      <section class="section" aria-labelledby="publications-title">
+        <div class="section-heading inline-heading">
+          <div>
+            <p class="section-kicker">Publications</p>
+            <h2 id="publications-title">Full list</h2>
+          </div>
+          <p class="note">* denotes equal contribution or supervision.</p>
+        </div>
+        <div class="project-list" id="publication-list"></div>
+      </section>
+
+      <section class="section" aria-labelledby="datasets-title">
+        <div class="section-heading">
+          <p class="section-kicker">Resources</p>
+          <h2 id="datasets-title">Books, chapters, and datasets</h2>
+        </div>
+        <div class="resource-grid">
+          <div>
+            <h3>Book chapter</h3>
+            <div id="chapter-list"></div>
+          </div>
+          <div>
+            <h3>Datasets</h3>
+            <div class="dataset-list" id="dataset-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Gradient Spaces Research Group</p>
+      <p>Stanford University</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
