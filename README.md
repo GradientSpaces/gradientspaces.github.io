@@ -25,8 +25,6 @@ site at gradientspaces.stanford.edu.
   Set `website` to link a member's personal site (omit it to show no link).
 - **Publications**: edit `data.js` → `publications`. Entries with an `image` are
   eligible for the featured-project cards; the first three with images are shown.
-- **Metrics**: the publication/dataset counts and year range on the research page
-  are computed automatically from `data.js`.
 - **News**: edit the news items directly in `index.html`.
 
 ## Design direction

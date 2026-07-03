@@ -532,39 +532,6 @@ main {
   font-size: 0.92rem;
 }
 
-.metric-strip {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  margin-bottom: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--line);
-}
-
-.metric-strip div {
-  padding: 22px;
-  background: var(--soft);
-}
-
-.metric-strip strong,
-.metric-strip span {
-  display: block;
-}
-
-.metric-strip strong {
-  color: var(--ink);
-  font-size: clamp(1.4rem, 4vw, 2.1rem);
-  line-height: 1;
-}
-
-.metric-strip span {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
 .research-row {
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr);
@@ -687,8 +654,7 @@ main {
   .profile-feature,
   .research-row,
   .publication-row,
-  .resource-grid,
-  .metric-strip {
+  .resource-grid {
     grid-template-columns: 1fr;
   }
 

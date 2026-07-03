@@ -171,27 +171,9 @@ const renderResources = () => {
   }
 };
 
-const renderMetrics = () => {
-  if (!window.siteData) return;
-  const { publications, datasets } = window.siteData;
-
-  const pubCount = document.querySelector("#metric-publications");
-  if (pubCount) pubCount.textContent = publications.length;
-
-  const datasetCount = document.querySelector("#metric-datasets");
-  if (datasetCount) datasetCount.textContent = datasets.length;
-
-  const range = document.querySelector("#metric-years");
-  if (range && publications.length) {
-    const years = publications.map((publication) => Number(publication.year)).filter(Boolean);
-    range.textContent = `${Math.min(...years)}-${Math.max(...years)}`;
-  }
-};
-
 renderFaculty();
 renderPeople();
 renderAlumni();
 renderFeaturedProjects();
 renderPublications();
 renderResources();
-renderMetrics();
