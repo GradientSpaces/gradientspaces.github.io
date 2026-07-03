@@ -5,12 +5,11 @@ window.siteData = {
         name: "Iro Armeni",
         role: "Assistant Professor, Civil and Environmental Engineering",
         initials: "IA",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/iro_armeni_26_copy_0.jpg?h=d55d53dd&itok=Bg9ys-rX",
+        photo: "assets/images/people/iro-armeni.jpg",
         bio:
           "Iro works at the intersection of architecture, civil engineering, and visual machine perception, developing data-driven methods that make sense of visual data from the built environment.",
         links: [
-          { label: "Profile", url: "https://gradientspaces.stanford.edu/people/iro-armeni" },
+          { label: "Website", url: "https://ir0.github.io/" },
           { label: "LinkedIn", url: "https://www.linkedin.com/in/iroarmeni/" }
         ]
       }
@@ -20,101 +19,78 @@ window.siteData = {
         name: "Martin JJ. Bucher",
         role: "PhD Student, CEE",
         initials: "MB",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/martin_0.jpeg?h=cbc98321&itok=FdQhXwvi",
-        education: "BSc Informatics, University of Zurich, 2019; MSc Computer Science, ETH Zürich, 2022",
+        photo: "assets/images/people/martin-bucher.jpeg",
         research: "Deep generative modeling, representation learning, and computer vision",
-        url: "https://gradientspaces.stanford.edu/people/martin-juan-jose-bucher"
+        website: "https://www.mnbucher.com/"
       },
       {
         name: "Sayan Deb Sarkar",
         role: "PhD Student, CEE",
         initials: "SS",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/sayandebsarkar_0.jpg?h=cfd741a4&itok=JPQuL2i7",
-        education: "B.Tech Information Technology, Manipal University Jaipur, 2020; MSc Computer Science, ETH Zurich, 2023",
+        photo: "assets/images/people/sayan-deb-sarkar.jpg",
         research: "3D vision, spatial AI, and multimodal scene understanding",
-        url: "https://gradientspaces.stanford.edu/people/sayan-deb-sarkar"
+        website: "https://sayands.github.io/"
       },
       {
         name: "Emily Steiner",
         role: "PhD Candidate, EE",
         initials: "ES",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/emily_steiner_0.jpeg?h=0f3f3a77&itok=FXy6m43z",
-        education: "BASc Mechatronics Engineering, University of Waterloo, 2023",
+        photo: "assets/images/people/emily-steiner.jpeg",
         research: "Dynamic 3D scenes and spatial perception",
-        url: "https://gradientspaces.stanford.edu/people/emily-steiner"
+        website: "https://www.easteine.com/"
       },
       {
         name: "Tao Sun",
         role: "PhD Student, CEE",
         initials: "TS",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/wechatimg52_0.jpg?h=89d6a65b&itok=yjrcCPmG",
-        education: "B.Eng Software Engineering, Tongji University; MSc Computer Science, ETH Zurich",
+        photo: "assets/images/people/tao-sun.jpg",
         research: "3D registration, spatial representation, and changing environments",
-        url: "https://gradientspaces.stanford.edu/people/tao-sun"
+        website: "https://taosun.io/"
       },
       {
         name: "Jianhao Zheng",
         role: "PhD Candidate, CEE",
         initials: "JZ",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/jianhao_1.jpg?h=f7e6b4b1&itok=0WrZq6rD",
-        education: "B.Eng and M.S. Civil and Environmental Engineering, HKUST",
+        photo: "assets/images/people/jianhao-zheng.jpg",
         research: "3D vision, visual SLAM, and spatial AI",
-        url: "https://gradientspaces.stanford.edu/people/jianhao-zheng"
+        website: "https://jianhao-zheng.github.io/"
       },
       {
         name: "Zhizhuo Zhou",
         role: "PhD Student, CS",
         initials: "ZZ",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/zhizhuo_zhou_0.jpeg?h=a7ffc51c&itok=vkyMkZuq",
-        education: "Computer Science PhD student at Stanford",
+        photo: "assets/images/people/zhizhuo-zhou.jpeg",
         research: "Spatial intelligence and computer vision",
-        url: "https://gradientspaces.stanford.edu/people/zhizhuo-zhou"
+        website: "https://www.zhiz.dev/"
       },
       {
         name: "Liyuan Zhu",
         role: "PhD Candidate, CEE",
         initials: "LZ",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/liyuan_2.jpg?h=a6c49293&itok=8CeuUkR1",
-        education: "B.S. Architectural Engineering, Southeast University, 2020; M.S. CEE, Stanford University, 2022",
-        research: "3D vision, machine perception, and point clouds",
-        url: "https://gradientspaces.stanford.edu/people/liyuan-zhu"
+        photo: "assets/images/people/liyuan-zhu.jpg",
+        research: "Video diffusion and 4D world modeling",
+        website: "https://www.zhuliyuan.net/"
       },
       {
         name: "Nicolas Dickenmann",
         role: "Visiting MS Student",
         initials: "ND",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/photo_5792034347127868162_y_2-nicolas_johannes_dickenmann_0.jpg?h=ca4b2658&itok=K2iMJsNH",
-        education: "BA Electrical Engineering, ETH Zurich, 2024",
-        research: "3D vision, spatial understanding, and generative modeling",
-        url: "https://gradientspaces.stanford.edu/people/nicolas-dickenmann"
+        photo: "assets/images/people/nicolas-dickenmann.jpg",
+        research: "3D vision, spatial understanding, and generative modeling"
       },
       {
         name: "Thomas Kiefer",
         role: "Visiting MS Student",
         initials: "TK",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/thomas_kiefer_0.jpg?h=464b37cb&itok=cAILbbGX",
-        education: "BSc Computer Science, Karlsruhe Institute of Technology, 2023",
-        research: "3D vision, generative modeling, and scene synthesis",
-        url: "https://gradientspaces.stanford.edu/people/thomas-kiefer"
+        photo: "assets/images/people/thomas-kiefer.jpg",
+        research: "3D vision, generative modeling, and scene synthesis"
       },
       {
         name: "Shreyas Agarwal",
         role: "Master Student",
         initials: "SA",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/shreyas_agarwal-shreyas_agarwal_0.jpeg?h=a7e6d17b&itok=r2-KBpq5",
-        education: "BS EECS, UC Berkeley, 2020; MS Computer Science, Stanford University, 2026",
-        research: "Computer vision, physical scene understanding, and generative modeling",
-        url: "https://gradientspaces.stanford.edu/people/shreyas-agarwal"
+        photo: "assets/images/people/shreyas-agarwal.jpeg",
+        research: "Computer vision, physical scene understanding, and generative modeling"
       }
     ],
     alumni: [
@@ -122,73 +98,55 @@ window.siteData = {
         name: "Ata Çelen",
         role: "MSc student, EE, ETH Zurich",
         initials: "AC",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/03_pass_0.jpg?h=36af4cfb&itok=stZsAiXx",
-        url: "https://gradientspaces.stanford.edu/people/ata-celen"
+        photo: "assets/images/people/ata-celen.jpg"
       },
       {
         name: "Ayca Duran",
         role: "Visiting PhD Student",
         initials: "AD",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/611a1527_square-ayca_duran_0.jpg?h=a3242890&itok=23RV9Zqg",
-        url: "https://gradientspaces.stanford.edu/people/ayca-duran"
+        photo: "assets/images/people/ayca-duran.jpg"
       },
       {
         name: "Kevin Qu",
         role: "Visiting MS Student",
         initials: "KQ",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/profile_pic-kevin_zien_qu_0.jpg?h=a7ffc51c&itok=Y45Tis4k",
-        url: "https://gradientspaces.stanford.edu/people/kevin-qu"
+        photo: "assets/images/people/kevin-qu.jpg"
       },
       {
         name: "Deepika Raghu",
         role: "Visiting PhD student",
         initials: "DR",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/deepika_raghu_1.jpeg?h=a367a227&itok=S5ugTAoa",
-        url: "https://gradientspaces.stanford.edu/people/deepika-raghu"
+        photo: "assets/images/people/deepika-raghu.jpeg"
       },
       {
         name: "Casper van Engelenburg",
         role: "Visiting PhD Student",
         initials: "CE",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/nrc_profiel-casper_cornelis_johan_van_engelenburg_0.jpg?h=1835957a&itok=pPi4hMzJ",
-        url: "https://gradientspaces.stanford.edu/people/casper-van-engelenburg"
+        photo: "assets/images/people/casper-van-engelenburg.jpg"
       },
       {
         name: "Massimiliano Viola",
         role: "Visiting MS Student",
         initials: "MV",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/photo-massimiliano_viola_0.jpg?h=97102f31&itok=RefrTcsc",
-        url: "https://gradientspaces.stanford.edu/people/massimiliano-viola"
+        photo: "assets/images/people/massimiliano-viola.jpg"
       },
       {
         name: "Cesar Augusto Portocarrero Rodriguez",
         role: "MS Student, CEE",
         initials: "CR",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/cesar_1.jpg?h=023a5919&itok=8HkRL8v5",
-        url: "https://gradientspaces.stanford.edu/people/cesar-augusto-portocarrero-rodriguez"
+        photo: "assets/images/people/cesar-portocarrero-rodriguez.jpg"
       },
       {
         name: "Codey Sun",
         role: "MS Student, EE",
         initials: "CS",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/me_linkedin3-codey_codey_sun_0.jpg?h=fbf7a813&itok=BskjSOu8",
-        url: "https://gradientspaces.stanford.edu/people/codey-sun"
+        photo: "assets/images/people/codey-sun.jpg"
       },
       {
         name: "Yung-Hsin Tung",
         role: "MS Student, CEE",
         initials: "YT",
-        photo:
-          "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/square_1900/public/media/image/tungheadshot-yung-hsin_tung_0.jpg?h=2a479378&itok=ZAJwUSyc",
-        url: "https://gradientspaces.stanford.edu/people/yung-hsin-tung"
+        photo: "assets/images/people/yung-hsin-tung.jpg"
       }
     ]
   },
@@ -208,8 +166,7 @@ window.siteData = {
       authors: "Emily Steiner, Jianhao Zheng, Henry Howard-Jenkins, Chris Xie, Iro Armeni",
       venue: "CVPR 2026",
       year: "2026",
-      image:
-        "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/card_1900x950/public/media/image/rescene_teaser_0.jpeg?h=f7614fcd&itok=jpXL2kK1",
+      image: "assets/images/projects/rescene4d.jpeg",
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2601.11508" },
         { label: "Website", url: "https://www.easteine.com/rescene4d/" }
@@ -220,8 +177,7 @@ window.siteData = {
       authors: "Jianhao Zheng, Liyuan Zhu, Zihan Zhu, Iro Armeni",
       venue: "CVPR 2026",
       year: "2026",
-      image:
-        "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/card_1900x950/public/media/image/wildpose_0.jpg?h=8288bdcc&itok=Y0hdh7tj",
+      image: "assets/images/projects/wildpose.jpg",
       links: [
         { label: "Code", url: "https://github.com/GradientSpaces/WildPose" },
         { label: "Website", url: "https://wildpose.github.io/" }
@@ -232,8 +188,7 @@ window.siteData = {
       authors: "Liyuan Zhu, Manjunath Narayana, Michal Stary, Will Hutchcroft, Gordon Wetzstein, Iro Armeni",
       venue: "CVPR 2026",
       year: "2026",
-      image:
-        "https://gradientspaces.stanford.edu/sites/g/files/sbiybj27761/files/styles/card_1900x950/public/media/image/gaussfusion_0.png?h=de982292&itok=BiDtk1Cg",
+      image: "assets/images/projects/gaussfusion.png",
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2603.25053" },
         { label: "Website", url: "http://research.zhuliyuan.net/projects/GaussFusion/" }

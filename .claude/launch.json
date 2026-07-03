@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gradient-spaces-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/Users/liyuanz/Desktop/gradient-spaces-website/.claude/serve.py",
+        "4173"
+      ],
+      "port": 4173
+    }
+  ]
+}

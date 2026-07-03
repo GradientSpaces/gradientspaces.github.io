@@ -73,10 +73,9 @@ const renderPeople = () => {
     article.append(createEl("p", "role", person.role));
     article.append(createEl("p", "", person.research));
 
-    const education = createEl("p", "detail-line", person.education);
-    article.append(education);
-
-    appendLinks(article, [{ label: "Profile", url: person.url }]);
+    if (person.website) {
+      appendLinks(article, [{ label: "Website", url: person.website }]);
+    }
     target.append(article);
   });
 };
@@ -91,7 +90,9 @@ const renderAlumni = () => {
     article.append(createPortrait(person));
     article.append(createEl("h3", "", person.name));
     article.append(createEl("p", "role", person.role));
-    appendLinks(article, [{ label: "Profile", url: person.url }]);
+    if (person.website) {
+      appendLinks(article, [{ label: "Website", url: person.website }]);
+    }
     target.append(article);
   });
 };
@@ -170,9 +171,27 @@ const renderResources = () => {
   }
 };
 
+const renderMetrics = () => {
+  if (!window.siteData) return;
+  const { publications, datasets } = window.siteData;
+
+  const pubCount = document.querySelector("#metric-publications");
+  if (pubCount) pubCount.textContent = publications.length;
+
+  const datasetCount = document.querySelector("#metric-datasets");
+  if (datasetCount) datasetCount.textContent = datasets.length;
+
+  const range = document.querySelector("#metric-years");
+  if (range && publications.length) {
+    const years = publications.map((publication) => Number(publication.year)).filter(Boolean);
+    range.textContent = `${Math.min(...years)}-${Math.max(...years)}`;
+  }
+};
+
 renderFaculty();
 renderPeople();
 renderAlumni();
 renderFeaturedProjects();
 renderPublications();
 renderResources();
+renderMetrics();
