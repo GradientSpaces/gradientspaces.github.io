@@ -195,6 +195,17 @@ window.siteData = {
       ]
     },
     {
+      title: "Register Any Point: Scaling 3D Point Cloud Registration by Flow Matching",
+      authors: "Yue Pan, Tao Sun, Liyuan Zhu, Lucas Nunes, Iro Armeni, Jens Behley, Cyrill Stachniss",
+      venue: "ECCV 2026",
+      year: "2026",
+      links: [
+        { label: "PDF", url: "https://arxiv.org/pdf/2512.01850" },
+        { label: "Website", url: "https://register-any-point.github.io/" },
+        { label: "Code", url: "https://github.com/PRBonn/RAP" }
+      ]
+    },
+    {
       title: "SGAligner++: Cross-Modal Language-Aided 3D Scene Graph Alignment",
       authors: "Binod Singh*, Sayan Deb Sarkar*, Iro Armeni",
       venue: "arXiv preprint",
@@ -202,17 +213,6 @@ window.siteData = {
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2509.20401" },
         { label: "Website", url: "https://singhbino3d.github.io/sgpp/" }
-      ]
-    },
-    {
-      title: "Register Any Point: Scaling 3D Point Cloud Registration by Flow Matching",
-      authors: "Yue Pan, Tao Sun, Liyuan Zhu, Lucas Nunes, Iro Armeni, Jens Behley, Cyrill Stachniss",
-      venue: "arXiv preprint",
-      year: "2025",
-      links: [
-        { label: "PDF", url: "https://arxiv.org/pdf/2512.01850" },
-        { label: "Website", url: "https://register-any-point.github.io/" },
-        { label: "Code", url: "https://github.com/PRBonn/RAP" }
       ]
     },
     {
