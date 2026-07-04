@@ -549,7 +549,7 @@ main {
 
 .publication-row {
   display: grid;
-  grid-template-columns: 138px 210px minmax(0, 1fr);
+  grid-template-columns: 210px minmax(0, 1fr);
   gap: 24px;
   align-items: start;
   padding: 24px 0;
@@ -578,22 +578,12 @@ main {
   object-fit: cover;
 }
 
-.pub-meta {
-  display: grid;
-  align-content: start;
-  gap: 8px;
-}
-
-.pub-meta span:first-child {
-  color: var(--stanford-red);
-  font-weight: 800;
-  font-variant-numeric: tabular-nums;
-}
-
-.pub-meta span:last-child {
+.pub-venue {
+  margin-top: 10px;
   color: var(--blue);
   font-size: 0.92rem;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
 }
 
 .note {

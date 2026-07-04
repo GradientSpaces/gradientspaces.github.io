@@ -159,16 +159,16 @@ const renderPublications = () => {
   target.innerHTML = "";
   window.siteData.publications.forEach((publication) => {
     const article = createEl("article", "publication-row");
-    const meta = createEl("div", "pub-meta");
-    meta.append(createEl("span", "", publication.year));
-    meta.append(createEl("span", "", publication.venue));
-    article.append(meta);
-
     article.append(createPubMedia(publication));
 
     const body = createEl("div");
     body.append(createEl("h3", "", publication.title));
     body.append(createEl("p", "", publication.authors));
+
+    const venueHasYear = /\b(19|20)\d{2}\b/.test(publication.venue);
+    const venueLabel = venueHasYear ? publication.venue : `${publication.venue} · ${publication.year}`;
+    body.append(createEl("p", "pub-venue", venueLabel));
+
     appendLinks(body, publication.links);
     article.append(body);
     target.append(article);
