@@ -122,6 +122,36 @@ const renderFeaturedProjects = () => {
     });
 };
 
+const createPubMedia = (publication) => {
+  const wrap = createEl("div", "pub-media");
+  const source = publication.media || publication.image;
+
+  if (!source) {
+    wrap.classList.add("empty");
+    return wrap;
+  }
+
+  if (/\.(mp4|webm|mov)$/i.test(source)) {
+    const video = document.createElement("video");
+    video.src = source;
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    video.setAttribute("aria-label", `${publication.title} teaser`);
+    wrap.append(video);
+  } else {
+    const img = document.createElement("img");
+    img.src = source;
+    img.alt = `${publication.title} teaser`;
+    img.loading = "lazy";
+    wrap.append(img);
+  }
+
+  return wrap;
+};
+
 const renderPublications = () => {
   const target = document.querySelector("#publication-list");
   if (!target || !window.siteData) return;
@@ -133,6 +163,8 @@ const renderPublications = () => {
     meta.append(createEl("span", "", publication.year));
     meta.append(createEl("span", "", publication.venue));
     article.append(meta);
+
+    article.append(createPubMedia(publication));
 
     const body = createEl("div");
     body.append(createEl("h3", "", publication.title));

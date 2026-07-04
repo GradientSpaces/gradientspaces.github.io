@@ -25,6 +25,12 @@ site at gradientspaces.stanford.edu.
   Set `website` to link a member's personal site (omit it to show no link).
 - **Publications**: edit `data.js` → `publications`. Entries with an `image` are
   eligible for the featured-project cards; the first three with images are shown.
+- **Paper teasers (GIF/video)**: every publication row has a media slot on the
+  left. Drop a file into `assets/media/` and set `media: "assets/media/<file>"`
+  on the publication in `data.js`. GIFs and images render as-is; `.mp4`/`.webm`
+  files autoplay muted on loop (much smaller than GIFs — prefer them). Without
+  `media`, the slot falls back to the entry's `image`, or shows an empty
+  placeholder.
 - **News**: edit the news items directly in `index.html`.
 
 ## Design direction

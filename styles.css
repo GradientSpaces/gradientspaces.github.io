@@ -549,8 +549,9 @@ main {
 
 .publication-row {
   display: grid;
-  grid-template-columns: 138px minmax(0, 1fr);
+  grid-template-columns: 138px 210px minmax(0, 1fr);
   gap: 24px;
+  align-items: start;
   padding: 24px 0;
   border-bottom: 1px solid var(--line);
   transition: background 0.2s ease;
@@ -558,6 +559,23 @@ main {
 
 .publication-row:hover {
   background: var(--soft);
+}
+
+.pub-media {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.pub-media img,
+.pub-media video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .pub-meta {
@@ -682,6 +700,14 @@ main {
   .news-item {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .publication-row {
+    gap: 14px;
+  }
+
+  .pub-media {
+    max-width: 340px;
   }
 }
 
