@@ -179,6 +179,7 @@ window.siteData = {
       year: "2026",
       image: "assets/images/projects/wildpose.jpg",
       links: [
+        { label: "PDF", url: "https://arxiv.org/abs/2605.12774" },
         { label: "Code", url: "https://github.com/GradientSpaces/WildPose" },
         { label: "Website", url: "https://wildpose.github.io/" }
       ]
@@ -288,6 +289,7 @@ window.siteData = {
       authors: "Jianhao Zheng*, Zihan Zhu*, Valentin Bieri, Marc Pollefeys, Songyou Peng, Iro Armeni",
       venue: "CVPR 2025",
       year: "2025",
+      image: "assets/images/projects/wildgs-slam.jpg",
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2504.03886" },
         { label: "Website", url: "https://wildgs-slam.github.io/" },
@@ -335,6 +337,7 @@ window.siteData = {
       authors: "Jianhao Zheng, Daniel Barath, Marc Pollefeys, Iro Armeni",
       venue: "ECCV 2024",
       year: "2024",
+      image: "assets/images/projects/map-adapt.jpg",
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2406.05849" },
         { label: "Website", url: "https://map-adapt.github.io/" },
