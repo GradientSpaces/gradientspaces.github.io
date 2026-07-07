@@ -179,6 +179,7 @@ window.siteData = {
       year: "2026",
       image: "assets/images/projects/wildpose.jpg",
       links: [
+        { label: "PDF", url: "https://arxiv.org/abs/2605.12774" },
         { label: "Code", url: "https://github.com/GradientSpaces/WildPose" },
         { label: "Website", url: "https://wildpose.github.io/" }
       ]
