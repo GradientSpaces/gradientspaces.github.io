@@ -150,12 +150,14 @@ window.siteData = {
       }
     ]
   },
+  joinFormUrl: "",
   publications: [
     {
       title: "CoPE-VideoLM: Leveraging Codec Primitives For Efficient Video Language Modeling",
       authors: "Sayan Deb Sarkar, Rémi Pautrat, Ondrej Miksik, Marc Pollefeys, Iro Armeni, Mahdi Rad, Mihai Dusmanu",
       venue: "arXiv preprint",
       year: "2026",
+      topics: ["dynamic-scenes"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2602.13191" },
         { label: "Website", url: "https://microsoft.github.io/CoPE/" }
@@ -166,6 +168,7 @@ window.siteData = {
       authors: "Emily Steiner, Jianhao Zheng, Henry Howard-Jenkins, Chris Xie, Iro Armeni",
       venue: "CVPR 2026",
       year: "2026",
+      topics: ["dynamic-scenes"],
       image: "assets/images/projects/rescene4d.jpeg",
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2601.11508" },
@@ -177,6 +180,7 @@ window.siteData = {
       authors: "Jianhao Zheng, Liyuan Zhu, Zihan Zhu, Iro Armeni",
       venue: "CVPR 2026",
       year: "2026",
+      topics: ["reconstruction"],
       image: "assets/images/projects/wildpose.jpg",
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2605.12774" },
@@ -189,6 +193,7 @@ window.siteData = {
       authors: "Liyuan Zhu, Manjunath Narayana, Michal Stary, Will Hutchcroft, Gordon Wetzstein, Iro Armeni",
       venue: "CVPR 2026",
       year: "2026",
+      topics: ["reconstruction"],
       image: "assets/images/projects/gaussfusion.png",
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2603.25053" },
@@ -200,6 +205,7 @@ window.siteData = {
       authors: "Yue Pan, Tao Sun, Liyuan Zhu, Lucas Nunes, Iro Armeni, Jens Behley, Cyrill Stachniss",
       venue: "ECCV 2026",
       year: "2026",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2512.01850" },
         { label: "Website", url: "https://register-any-point.github.io/" },
@@ -211,6 +217,7 @@ window.siteData = {
       authors: "Binod Singh*, Sayan Deb Sarkar*, Iro Armeni",
       venue: "arXiv preprint",
       year: "2025",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2509.20401" },
         { label: "Website", url: "https://singhbino3d.github.io/sgpp/" }
@@ -221,6 +228,7 @@ window.siteData = {
       authors: "Sayan Deb Sarkar, Sinisa Stekovic, Vincent Lepetit, Iro Armeni",
       venue: "NeurIPS 2025",
       year: "2025",
+      topics: ["mixed-reality"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2510.16136" },
         { label: "Website", url: "https://sayands.github.io/guideflow3d/" },
@@ -232,6 +240,7 @@ window.siteData = {
       authors: "Tao Sun*, Liyuan Zhu*, Shengyu Huang, Shuran Song, Iro Armeni",
       venue: "NeurIPS 2025 Spotlight",
       year: "2025",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2506.05282" },
         { label: "Website", url: "https://rectified-pointflow.github.io/" },
@@ -243,6 +252,7 @@ window.siteData = {
       authors: "Ayca Duran, Christoph Waibel, Bernd Bickel, Iro Armeni, Arno Schlueter",
       venue: "Tackling Climate Change with Machine Learning, Workshop in NeurIPS 2025",
       year: "2025",
+      topics: ["sustainable-environments"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2511.18882" },
         { label: "Code", url: "https://github.com/ycdrn/segment4pvlayout" }
@@ -253,6 +263,7 @@ window.siteData = {
       authors: "Ata Çelen, Marc Pollefeys, Dániel Béla Baráth, Iro Armeni",
       venue: "ICCV 2025",
       year: "2025",
+      topics: ["mixed-reality"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2510.18054" },
         { label: "Website", url: "https://house-tour.github.io" },
@@ -265,6 +276,7 @@ window.siteData = {
       authors: "Martin JJ. Bucher, Iro Armeni",
       venue: "arXiv preprint",
       year: "2025",
+      topics: ["mixed-reality"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2506.02459" },
         { label: "Website", url: "https://respace.mnbucher.com/" },
@@ -277,6 +289,7 @@ window.siteData = {
       authors: "Liyuan Zhu, Shengqu Cai*, Shengyu Huang*, Gordon Wetzstein, Naji Khosravan, Iro Armeni",
       venue: "ACM SIGGRAPH 2025",
       year: "2025",
+      topics: ["mixed-reality"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2502.10377" },
         { label: "Website", url: "https://restyle3d.github.io/" },
@@ -290,6 +303,7 @@ window.siteData = {
       venue: "CVPR 2025",
       year: "2025",
       image: "assets/images/projects/wildgs-slam.jpg",
+      topics: ["dynamic-scenes", "reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2504.03886" },
         { label: "Website", url: "https://wildgs-slam.github.io/" },
@@ -302,6 +316,7 @@ window.siteData = {
       authors: "Sayan Deb Sarkar, Ondrej Miksik, Marc Pollefeys, Dániel Béla Baráth, Iro Armeni",
       venue: "CVPR 2025 Highlight",
       year: "2025",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2502.15011" },
         { label: "Website", url: "https://sayands.github.io/crossover/" },
@@ -314,6 +329,7 @@ window.siteData = {
       authors: "Liyuan Zhu, Yue Li, Erik Sandström, Shengyu Huang, Konrad Schindler, Iro Armeni",
       venue: "3DV 2025 Oral",
       year: "2025",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2408.10154" },
         { label: "Website", url: "https://loopsplat.github.io/" },
@@ -325,6 +341,7 @@ window.siteData = {
       authors: "Jianhao Zheng, Gabor Valasek, Daniel Barath, Iro Armeni",
       venue: "WACV 2025 Oral",
       year: "2025",
+      topics: ["reconstruction"],
       links: [
         {
           label: "PDF",
@@ -338,6 +355,7 @@ window.siteData = {
       venue: "ECCV 2024",
       year: "2024",
       image: "assets/images/projects/map-adapt.jpg",
+      topics: ["dynamic-scenes"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2406.05849" },
         { label: "Website", url: "https://map-adapt.github.io/" },
@@ -350,6 +368,7 @@ window.siteData = {
       authors: "Jiaqi Chen, Daniel Barath, Iro Armeni, Marc Pollefeys, Hermann Blum",
       venue: "ECCV 2024",
       year: "2024",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2404.14565" },
         { label: "Website", url: "https://whereami-langloc.github.io/" },
@@ -361,6 +380,7 @@ window.siteData = {
       authors: "Ata Çelen, Guo Han, Konrad Schindler, Luc Van Gool, Iro Armeni*, Anton Obukhov*, Xi Wang*",
       venue: "CV4Metaverse, Workshop in ECCV 2024",
       year: "2024",
+      topics: ["mixed-reality"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2404.02838.pdf" },
         { label: "Website", url: "https://atcelen.github.io/I-Design/" },
@@ -373,6 +393,7 @@ window.siteData = {
       authors: "Yang Miao, Iro Armeni, Marc Pollefeys, Daniel Barath",
       venue: "IROS 2024 Oral",
       year: "2024",
+      topics: ["dynamic-scenes"],
       links: [{ label: "PDF", url: "https://browse.arxiv.org/pdf/2309.14737.pdf" }]
     },
     {
@@ -380,6 +401,7 @@ window.siteData = {
       authors: "Tao Sun, Yan Hao, Shengyu Huang, Silvio Savarese, Konrad Schindler, Marc Pollefeys, Iro Armeni",
       venue: "ISPRS Journal of Photogrammetry and Remote Sensing, 2025",
       year: "2024",
+      topics: ["dynamic-scenes", "reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2311.09346" },
         { label: "Website", url: "https://nothing-stands-still.com/" },
@@ -391,6 +413,7 @@ window.siteData = {
       authors: "Liyuan Zhu, Shengyu Huang, Konrad Schindler, Iro Armeni",
       venue: "CVPR 2024 Highlight",
       year: "2024",
+      topics: ["dynamic-scenes", "reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/abs/2312.09138" },
         { label: "Website", url: "https://www.zhuliyuan.net/livingscenes" },
@@ -403,6 +426,7 @@ window.siteData = {
       authors: "Shengze Jin, Iro Armeni, Marc Pollefeys, Daniel Barath",
       venue: "CVPR 2024",
       year: "2024",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2404.00429.pdf" },
         { label: "Video", url: "https://www.youtube.com/watch?v=dnzhKfPIoWg&ab_channel=ShengzeJin" },
@@ -417,6 +441,7 @@ window.siteData = {
       authors: "Oguzhan Ilter, Iro Armeni, Marc Pollefeys, Daniel Barath",
       venue: "ICRA 2024",
       year: "2024",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10610238" },
         { label: "Code", url: "https://github.com/oguzhanilter/Semantically-Guided-Feature-Matching-for-Visual-SLAM" }
@@ -427,6 +452,7 @@ window.siteData = {
       authors: "Shengze Jin, Daniel Barath, Marc Pollefeys, Iro Armeni",
       venue: "3DV 2024",
       year: "2024",
+      topics: ["reconstruction"],
       links: [{ label: "PDF", url: "https://arxiv.org/pdf/2309.16023" }]
     },
     {
@@ -434,6 +460,7 @@ window.siteData = {
       authors: "Sayan Deb Sarkar, Ondrej Miksik, Marc Pollefeys, Daniel Barath, Iro Armeni",
       venue: "ICCV 2023",
       year: "2023",
+      topics: ["reconstruction"],
       links: [
         { label: "PDF", url: "https://arxiv.org/pdf/2304.14880.pdf" },
         { label: "Website", url: "https://sayands.github.io/sgaligner/" },

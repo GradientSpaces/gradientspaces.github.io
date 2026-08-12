@@ -14,7 +14,8 @@
     <meta property="og:url" content="https://gradientspaces.github.io/research.html">
     <meta property="og:image" content="https://gradientspaces.github.io/assets/images/group-photo.jpg">
     <link rel="canonical" href="https://gradientspaces.github.io/research.html">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/GradientSpacesLogo.png">
+    <link rel="apple-touch-icon" href="assets/images/GradientSpacesLogo.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -30,6 +31,7 @@
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a class="active" href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
         <a href="index.html#news">News</a>
         <a href="index.html#connect">Connect</a>
       </nav>
@@ -52,24 +54,29 @@
           <p class="section-kicker">Themes</p>
           <h2 id="themes-title">Research directions</h2>
         </div>
-        <div class="theme-grid">
-          <article>
+        <div class="theme-grid" aria-label="Research topics">
+          <button class="theme-button" type="button" data-topic="dynamic-scenes" aria-expanded="false" aria-controls="theme-papers">
+            <span class="theme-toggle" aria-hidden="true">+</span>
             <h3>Dynamic 3D Scenes</h3>
             <p>Perception systems for spaces that change across time, objects, people, and use.</p>
-          </article>
-          <article>
+          </button>
+          <button class="theme-button" type="button" data-topic="reconstruction" aria-expanded="false" aria-controls="theme-papers">
+            <span class="theme-toggle" aria-hidden="true">+</span>
             <h3>In-the-Wild Reconstruction</h3>
             <p>Robust 3D methods that survive unconstrained sensors, videos, sites, and weather.</p>
-          </article>
-          <article>
+          </button>
+          <button class="theme-button" type="button" data-topic="mixed-reality" aria-expanded="false" aria-controls="theme-papers">
+            <span class="theme-toggle" aria-hidden="true">+</span>
             <h3>Mixed Reality</h3>
             <p>Interfaces and representations that bridge physical environments and digital design.</p>
-          </article>
-          <article>
+          </button>
+          <button class="theme-button" type="button" data-topic="sustainable-environments" aria-expanded="false" aria-controls="theme-papers">
+            <span class="theme-toggle" aria-hidden="true">+</span>
             <h3>Sustainable Environments</h3>
             <p>Data-driven tools for adaptive, equitable, and resource-aware spaces.</p>
-          </article>
+          </button>
         </div>
+        <div class="theme-papers" id="theme-papers" hidden aria-live="polite"></div>
       </section>
 
       <section class="section" aria-labelledby="projects-title">
@@ -110,8 +117,13 @@
     </main>
 
     <footer class="site-footer">
-      <p>Gradient Spaces Research Group</p>
-      <p>Stanford University</p>
+      <div class="footer-identity">
+        <a href="https://cee.stanford.edu/" aria-label="Stanford Civil and Environmental Engineering">
+          <img src="assets/images/stanford-cee-lockup.png" alt="Stanford University — Civil &amp; Environmental Engineering">
+        </a>
+        <p>Gradient Spaces Research Group</p>
+      </div>
+      <p>Y2E2, 473 Via Ortega, Room 233, Stanford, CA 94305</p>
     </footer>
 
     <script src="data.js"></script>
