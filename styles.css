@@ -729,6 +729,40 @@ main {
   border-radius: 8px;
 }
 
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 20px;
+}
+
+.equipment-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.equipment-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.equipment-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--ink);
+}
+
+.equipment-card li span {
+  color: var(--muted);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .research-hero {
   display: block;
   max-width: 820px;
