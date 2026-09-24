@@ -23,6 +23,7 @@ site at gradientspaces.stanford.edu.
 
 ## Editing content
 
+- Always check that your changes are aligned with: https://uit.stanford.edu/guide/webstandards
 - **People**: edit `data.js` → `people` (faculty / current / alumni). Add a headshot
   to `assets/images/people/` and set `photo`; omit `photo` to show initials instead.
   Set `website` to link a member's personal site (omit it to show no link).

@@ -32,6 +32,7 @@
         <a href="people.html">People</a>
         <a class="active" href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
+        <a href="events.html">Events</a>
         <a href="index.html#news">News</a>
         <a href="index.html#connect">Connect</a>
       </nav>
@@ -44,7 +45,7 @@
           <h1>Spatial intelligence for Gradient Spaces</h1>
           <p class="lead">
             We create methods that connect images, video, geometry, simulation, and human intent to make
-            adaptive environments more measurable, generative, and useful.
+            physical and digital environments more measurable, generative, and useful.
           </p>
         </div>
       </section>
@@ -54,21 +55,26 @@
           <p class="section-kicker">Themes</p>
           <h2 id="themes-title">Research directions</h2>
         </div>
-        <div class="theme-grid" aria-label="Research topics">
+        <div class="theme-grid" role="group" aria-label="Research topics">
           <button class="theme-button" type="button" data-topic="dynamic-scenes" aria-expanded="false" aria-controls="theme-papers">
             <span class="theme-toggle" aria-hidden="true">+</span>
-            <h3>Dynamic 3D Scenes</h3>
+            <h3>Dynamic and Evolving 3D Scenes</h3>
             <p>Perception systems for spaces that change across time, objects, people, and use.</p>
           </button>
           <button class="theme-button" type="button" data-topic="reconstruction" aria-expanded="false" aria-controls="theme-papers">
             <span class="theme-toggle" aria-hidden="true">+</span>
-            <h3>In-the-Wild Reconstruction</h3>
-            <p>Robust 3D methods that survive unconstrained sensors, videos, sites, and weather.</p>
+            <h3>In-the-Wild Reconstruction &amp; Mapping</h3>
+            <p>Robust 3D reconstruction and real-time mapping from unconstrained, real-world visual data.</p>
           </button>
-          <button class="theme-button" type="button" data-topic="mixed-reality" aria-expanded="false" aria-controls="theme-papers">
+          <button class="theme-button" type="button" data-topic="generative-design" aria-expanded="false" aria-controls="theme-papers">
             <span class="theme-toggle" aria-hidden="true">+</span>
-            <h3>Mixed Reality</h3>
-            <p>Interfaces and representations that bridge physical environments and digital design.</p>
+            <h3>Generative Spatial Design</h3>
+            <p>Generative and LLM-driven synthesis, editing, and interfaces connecting physical and digital space.</p>
+          </button>
+          <button class="theme-button" type="button" data-topic="embodied-intelligence" aria-expanded="false" aria-controls="theme-papers">
+            <span class="theme-toggle" aria-hidden="true">+</span>
+            <h3>Embodied Intelligence</h3>
+            <p>Perception, mapping, and localization that let agents navigate and act in the spaces around them.</p>
           </button>
           <button class="theme-button" type="button" data-topic="sustainable-environments" aria-expanded="false" aria-controls="theme-papers">
             <span class="theme-toggle" aria-hidden="true">+</span>
@@ -93,26 +99,25 @@
             <p class="section-kicker">Publications</p>
             <h2 id="publications-title">Full list</h2>
           </div>
-          <p class="note">* denotes equal contribution or supervision.</p>
+          <p class="note">* denotes equal contribution or supervision</p>
         </div>
         <div class="project-list" id="publication-list"></div>
+      </section>
+
+      <section class="section" aria-labelledby="chapters-title">
+        <div class="section-heading">
+          <p class="section-kicker">Publications</p>
+          <h2 id="chapters-title">Books &amp; Chapters</h2>
+        </div>
+        <div id="chapter-list"></div>
       </section>
 
       <section class="section" aria-labelledby="datasets-title">
         <div class="section-heading">
           <p class="section-kicker">Resources</p>
-          <h2 id="datasets-title">Books, chapters, and datasets</h2>
+          <h2 id="datasets-title">Datasets</h2>
         </div>
-        <div class="resource-grid">
-          <div>
-            <h3>Book chapter</h3>
-            <div id="chapter-list"></div>
-          </div>
-          <div>
-            <h3>Datasets</h3>
-            <div class="dataset-list" id="dataset-list"></div>
-          </div>
-        </div>
+        <div class="dataset-list" id="dataset-list"></div>
       </section>
     </main>
 
@@ -121,9 +126,16 @@
         <a href="https://cee.stanford.edu/" aria-label="Stanford Civil and Environmental Engineering">
           <img src="assets/images/stanford-cee-lockup.png" alt="Stanford University — Civil &amp; Environmental Engineering">
         </a>
+        <a class="footer-soe-logo" href="https://engineering.stanford.edu/">
+          <img src="assets/images/stanford-engineering-logo.png" alt="Stanford Engineering" width="1080" height="101">
+        </a>
         <p>Gradient Spaces Research Group</p>
       </div>
-      <p>Y2E2, 473 Via Ortega, Room 233, Stanford, CA 94305</p>
+      <div class="footer-meta">
+        <p>Y2E2, 473 Via Ortega, Stanford, CA 94305</p>
+        <p>Site owner: Iro Armeni · iarmeni@stanford.edu</p>
+        <p class="footer-accessibility"><a href="https://www.stanford.edu/site/accessibility">Accessibility</a></p>
+      </div>
     </footer>
 
     <script src="data.js"></script>

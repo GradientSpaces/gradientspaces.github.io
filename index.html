@@ -32,6 +32,7 @@
         <a href="people.html">People</a>
         <a href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
+        <a href="events.html">Events</a>
         <a href="#news">News</a>
         <a href="#connect">Connect</a>
       </nav>
@@ -50,7 +51,7 @@
             We study how real-world visual data can help design, construct, and understand adaptive spaces
             that move between the physical and digital world.
           </p>
-          <div class="hero-actions" aria-label="Primary links">
+          <div class="hero-actions" role="group" aria-label="Primary links">
             <a class="strong-link" href="research.html">Research</a>
             <a class="strong-link" href="people.html">People</a>
             <a class="strong-link" href="https://github.com/GradientSpaces">Github</a>
@@ -63,36 +64,60 @@
             src="assets/images/GradientSpacesLogo.png"
             alt="Gradient Spaces logo"
           >
-          <div class="photo-gallery" data-gallery aria-roledescription="carousel" aria-label="Gradient Spaces group photos">
+          <div class="photo-gallery" data-gallery role="region" aria-roledescription="carousel" aria-label="Gradient Spaces group photos">
             <div class="gallery-stage">
               <figure class="gallery-slide is-active" data-gallery-slide aria-hidden="false">
                 <img
-                  src="assets/images/group-photo.jpg"
-                  alt="Gradient Spaces group photo at Stanford"
+                  src="assets/images/carousel/group-photo-2026-indoors.jpeg"
+                  alt="The Gradient Spaces group members sitting in the Gradient Space lab."
                 >
-                <figcaption>Gradient Spaces Lab at Stanford.</figcaption>
+                <figcaption>Gradient Spaces group photo in the lab, Stanford 2026.</figcaption>
               </figure>
               <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
-                <div class="photo-placeholder lunch-placeholder" role="img" aria-label="Placeholder for a future lab lunch photo">
-                  <span>Lab lunch</span>
-                  <small>Photo coming soon</small>
-                </div>
-                <figcaption>Around the table — lunch photo coming soon.</figcaption>
+                <img
+                  src="assets/images/carousel/group-photo-2026-outdoors.jpeg"
+                  alt="The Gradient Spaces group members sitting outdoors at the Stanford campus."
+                >
+                <figcaption>Gradient Spaces group photo on campus, Stanford 2026.</figcaption>
               </figure>
               <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
-                <div class="photo-placeholder outing-placeholder" role="img" aria-label="Placeholder for a future group outing photo">
-                  <span>Group outing</span>
-                  <small>Photo coming soon</small>
-                </div>
-                <figcaption>Beyond the lab — outing photo coming soon.</figcaption>
+                <img
+                  src="assets/images/carousel/gradient-canvas-cvpr2025.jpg"
+                  alt="Members of the Gradient Spaces group in front of their AR art exhibit Gradient Canvas"
+                >
+                <figcaption>Gradient Canvas, CVPR Art Exhibit 2025.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
+                <img
+                  src="assets/images/carousel/neurips-2025.jpeg"
+                  alt="Members of the Gradient Spaces group while attending the NeurIPS 2025 conference."
+                >
+                <figcaption>Our lab members at NeurIPS 2025.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
+                <img
+                  src="assets/images/carousel/group-photo-bbq2026.jpeg"
+                  alt="Members of the Gradient Spaces group at social gathering."
+                >
+                <figcaption>Gradient Spaces group photo at social outing, Stanford 2026.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
+                <img
+                  src="assets/images/carousel/cvpr-2026.jpeg"
+                  alt="Members of the Gradient Spaces group while attending the CVPR 2026 conference."
+                >
+                <figcaption>Our lab members at CVPR 2026.</figcaption>
               </figure>
             </div>
             <div class="gallery-controls">
               <button type="button" class="gallery-arrow" data-gallery-previous aria-label="Show previous photo">←</button>
-              <div class="gallery-dots" aria-label="Choose a group photo">
+              <div class="gallery-dots" role="group" aria-label="Choose a group photo">
                 <button type="button" class="gallery-dot is-active" data-gallery-dot="0" aria-label="Show lab group photo" aria-current="true"></button>
-                <button type="button" class="gallery-dot" data-gallery-dot="1" aria-label="Show lunch photo placeholder"></button>
-                <button type="button" class="gallery-dot" data-gallery-dot="2" aria-label="Show outing photo placeholder"></button>
+                <button type="button" class="gallery-dot" data-gallery-dot="1" aria-label="Show campus group photo"></button>
+                <button type="button" class="gallery-dot" data-gallery-dot="2" aria-label="Show art exhibit photo"></button>
+                <button type="button" class="gallery-dot" data-gallery-dot="3" aria-label="Show conference photo"></button>
+                <button type="button" class="gallery-dot" data-gallery-dot="4" aria-label="Show outing photo"></button>
+                <button type="button" class="gallery-dot" data-gallery-dot="5" aria-label="Show another conference photo"></button>
               </div>
               <button type="button" class="gallery-pause" data-gallery-pause aria-pressed="false">Pause</button>
               <button type="button" class="gallery-arrow" data-gallery-next aria-label="Show next photo">→</button>
@@ -108,12 +133,13 @@
         </div>
         <div class="body-copy">
           <p>
-            Gradient Spaces develops quantitative methods for environments that blend real reality,
-            mixed reality, and virtual reality. The lab works across visual data, 3D understanding,
-            design, construction, and human experience.
+            Gradient Spaces develops quantitative methods for environments that blend the physical
+            and the digital. The lab works across different visual data, developing methods and 
+            frameworks that are capable of designing, reconstructing, and predicting our spaces and 
+            interactions within them in this blend.
           </p>
           <p>
-            Our research spans dynamic 3D scene understanding, in-the-wild reconstruction, mixed
+            Our research spans dynamic 3D and 4D scene understanding, in-the-wild reconstruction, mixed
             reality, and sustainable built environments — with open datasets, code, and benchmarks
             released alongside our publications.
           </p>
@@ -129,22 +155,37 @@
           <article class="news-item">
             <time datetime="2026">2026</time>
             <div>
+              <h3>Four papers accepted to NeurIPS 2026</h3>
+              <p><a href="https://research.nvidia.com/labs/amri/projects/world-from-motion/">World from Motion</a>,
+                <a href="https://microsoft.github.io/CoPE/">CoPE-VideoLM</a>,
+                <a href="https://streetnvs.github.io/website/">StreetNVS</a>, and GraphWrit3R were accepted to NeurIPS 2026.
+              </p>
+            </div>
+          </article>
+          <article class="news-item">
+            <time datetime="2026">2026</time>
+            <div>
+              <h3>Tao Sun named a Stanford Robotics Center Robotics Scholar</h3>
+              <p><a href="people.html#tao-sun">Tao Sun</a> has been selected as a Robotics Scholar in the inaugural cohort of the Stanford Robotics Center.</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <time datetime="2026">2026</time>
+            <div>
+              <h3>Best Paper Award Candidate at ECCV 2026</h3>
+              <p><a href="https://register-any-point.github.io/">Register Any Point</a>, with authors among others <a href="people.html#tao-sun">Tao Sun</a>,
+                <a href="people.html#liyuan-zhu">Liyuan Zhu</a> and <a href="people.html#iro-armeni">Iro Armeni</a>, was recognized as a best paper award candidate.
+              </p>
+            </div>
+          </article>
+          <article class="news-item">
+            <time datetime="2026">2026</time>
+            <div>
               <h3>Three papers accepted to CVPR 2026</h3>
-              <p>Selected work spans dynamic indoor scenes, robust pose estimation, and in-the-wild 3D reconstruction.</p>
-            </div>
-          </article>
-          <article class="news-item">
-            <time datetime="2025">2025</time>
-            <div>
-              <h3>U. V. Helava Award for Best Paper</h3>
-              <p>Tao Sun, Iro Armeni, and collaborators were recognized for work on evolving 3D scenes.</p>
-            </div>
-          </article>
-          <article class="news-item">
-            <time datetime="2025">2025</time>
-            <div>
-              <h3>Two papers accepted to NeurIPS 2025</h3>
-              <p>GuideFlow3D and Rectified Point Flow join the lab's growing archive of spatial AI work.</p>
+              <p><a href="https://www.easteine.com/rescene4d/">ReScene4D</a>,
+                <a href="https://wildpose.github.io/">WildPose</a>, and
+                <a href="http://research.zhuliyuan.net/projects/GaussFusion/">GaussFusion</a> were accepted to CVPR 2026.
+              </p>
             </div>
           </article>
         </div>
@@ -159,44 +200,7 @@
           <a class="text-link" href="research.html">View all research</a>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <img
-              src="assets/images/projects/rescene4d.jpeg"
-              alt="ReScene4D project teaser"
-              loading="lazy"
-            >
-            <div>
-              <p class="tag">CVPR 2026</p>
-              <h3>ReScene4D</h3>
-              <p>Temporally consistent semantic instance segmentation for evolving indoor 3D scenes.</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <img
-              src="assets/images/projects/wildpose.jpg"
-              alt="WildPose project teaser"
-              loading="lazy"
-            >
-            <div>
-              <p class="tag">CVPR 2026</p>
-              <h3>WildPose</h3>
-              <p>A unified framework for robust pose estimation in unconstrained visual settings.</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <img
-              src="assets/images/projects/gaussfusion.png"
-              alt="GaussFusion project teaser"
-              loading="lazy"
-            >
-            <div>
-              <p class="tag">CVPR 2026</p>
-              <h3>GaussFusion</h3>
-              <p>Geometry-informed video generation for stronger 3D reconstruction in the wild.</p>
-            </div>
-          </article>
-        </div>
+        <div class="project-grid" id="featured-projects"></div>
       </section>
 
       <section class="section connect-band" id="connect" aria-labelledby="connect-title">
@@ -208,7 +212,9 @@
           <a href="https://github.com/GradientSpaces">Github</a>
           <a href="https://huggingface.co/gradient-spaces">HuggingFace</a>
           <a href="https://www.linkedin.com/company/gradientspaces">LinkedIn</a>
+          <a></a>
           <a href="https://cee.stanford.edu/academics-admission/graduate-admissions">PhD in CEE</a>
+          <a href="https://www.cs.stanford.edu/admissions/phd-admissions">PhD in CS</a>
         </div>
       </section>
     </main>
@@ -218,11 +224,19 @@
         <a href="https://cee.stanford.edu/" aria-label="Stanford Civil and Environmental Engineering">
           <img src="assets/images/stanford-cee-lockup.png" alt="Stanford University — Civil &amp; Environmental Engineering">
         </a>
+        <a class="footer-soe-logo" href="https://engineering.stanford.edu/">
+          <img src="assets/images/stanford-engineering-logo.png" alt="Stanford Engineering" width="1080" height="101">
+        </a>
         <p>Gradient Spaces Research Group</p>
       </div>
-      <p>Y2E2, 473 Via Ortega, Room 233, Stanford, CA 94305</p>
+      <div class="footer-meta">
+        <p>Y2E2, 473 Via Ortega, Stanford, CA 94305</p>
+        <p>Site owner: Iro Armeni · iarmeni@stanford.edu</p>
+        <p class="footer-accessibility"><a href="https://www.stanford.edu/site/accessibility">Accessibility</a></p>
+      </div>
     </footer>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
