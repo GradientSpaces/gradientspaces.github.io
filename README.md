@@ -42,6 +42,11 @@ site at gradientspaces.stanford.edu.
 - **News**: edit the news items directly in `index.html`.
 - **Group gallery**: replace the lunch and outing placeholders in `index.html`
   when new photos are available; the gallery advances automatically.
+- **Cache busting**: every page loads `styles.css`, `script.js`, and `data.js`
+  with a version tag (e.g. `styles.css?v=20260925`). GitHub Pages lets browsers
+  reuse old copies for 10 minutes, so after changing any of these files, bump the
+  tag on all pages to today's date before pushing, e.g.:
+  `sed -i '' 's/?v=20260925/?v=20261001/g' *.html` (use the current tag and date).
 
 ## Design direction
 
