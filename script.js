@@ -366,31 +366,148 @@ const createPubMedia = (publication) => {
   return wrap;
 };
 
+// Case- and accent-insensitive folding that remembers where each folded character came from,
+// so matches found in the folded text can be highlighted in the original text.
+const foldWithMap = (text) => {
+  let folded = "";
+  const map = [];
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index].normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    folded += char;
+    for (let i = 0; i < char.length; i += 1) map.push(index);
+  }
+  return { folded, map };
+};
+
+const getSearchTerms = (query) => [
+  ...new Set(foldWithMap(query).folded.split(/\s+/).filter(Boolean)),
+];
+
+const getMatchRanges = (field, terms) => {
+  const ranges = [];
+  terms.forEach((term) => {
+    let start = field.folded.indexOf(term);
+    while (start !== -1) {
+      ranges.push([field.map[start], field.map[start + term.length - 1] + 1]);
+      start = field.folded.indexOf(term, start + 1);
+    }
+  });
+  ranges.sort((a, b) => a[0] - b[0]);
+
+  return ranges.reduce((merged, range) => {
+    const last = merged[merged.length - 1];
+    if (last && range[0] <= last[1]) last[1] = Math.max(last[1], range[1]);
+    else merged.push([...range]);
+    return merged;
+  }, []);
+};
+
+const renderHighlighted = (field, terms) => {
+  const ranges = terms.length ? getMatchRanges(field, terms) : [];
+  let cursor = 0;
+  field.element.replaceChildren();
+  ranges.forEach(([start, end]) => {
+    if (start > cursor) field.element.append(field.text.slice(cursor, start));
+    field.element.append(createEl("mark", "search-hit", field.text.slice(start, end)));
+    cursor = end;
+  });
+  if (cursor < field.text.length) field.element.append(field.text.slice(cursor));
+};
+
+const getPublicationYear = (publication) =>
+  Math.max(...(String(publication.year ?? "").match(/\b(19|20)\d{2}\b/g) || ["0"]).map(Number));
+
 const renderPublications = () => {
   const target = document.querySelector("#publication-list");
   if (!target || !window.siteData) return;
 
+  const publications = window.siteData.publications;
+  const currentYear = new Date().getFullYear();
+  const newestYear = Math.max(...publications.map(getPublicationYear));
+  // Early in a year there may be nothing dated yet, so fall back to the newest year on record.
+  const latestYear = Math.min(currentYear, newestYear);
+
   target.innerHTML = "";
-  window.siteData.publications.forEach((publication) => {
+  const rows = publications.map((publication) => {
     const article = createEl("article", "publication-row");
     article.append(createPubMedia(publication));
 
     const body = createEl("div");
-    body.append(createEl("h3", "", publication.title));
-    body.append(createEl("p", "", publication.authors));
+    const fields = [];
+    const addField = (tag, className, text) => {
+      const element = createEl(tag, className, text);
+      body.append(element);
+      fields.push({ element, text, ...foldWithMap(text) });
+    };
+
+    addField("h3", "", publication.title);
+    addField("p", "", publication.authors);
 
     const venueHasYear = /\b(19|20)\d{2}\b/.test(publication.venue);
     const venueLabel = venueHasYear ? publication.venue : `${publication.venue} · ${publication.year}`;
-    body.append(createEl("p", "pub-venue", venueLabel));
+    addField("p", "pub-venue", venueLabel);
 
     if (publication.award) {
-      body.append(createEl("p", "pub-award", publication.award));
+      addField("p", "pub-award", publication.award);
     }
 
     appendLinks(body, publication.links);
     article.append(body);
     target.append(article);
+
+    return { article, fields, isLatest: getPublicationYear(publication) >= latestYear };
   });
+
+  const search = document.querySelector("#publication-search");
+  const status = document.querySelector("#publication-search-status");
+  const toggle = document.querySelector("#publication-toggle");
+  const latestCount = rows.filter((row) => row.isLatest).length;
+  const earlierCount = rows.length - latestCount;
+  const paperLabel = (count) => `${count} ${count === 1 ? "publication" : "publications"}`;
+  let isExpanded = earlierCount === 0;
+
+  const update = () => {
+    const terms = getSearchTerms(search?.value || "");
+    let visibleCount = 0;
+
+    rows.forEach((row) => {
+      const matches =
+        !terms.length || terms.every((term) => row.fields.some((field) => field.folded.includes(term)));
+      const isVisible = terms.length ? matches : isExpanded || row.isLatest;
+      row.article.hidden = !isVisible;
+      row.fields.forEach((field) => renderHighlighted(field, isVisible ? terms : []));
+      if (isVisible) visibleCount += 1;
+    });
+
+    if (toggle) {
+      toggle.hidden = terms.length > 0 || earlierCount === 0;
+      toggle.textContent = isExpanded
+        ? `Show only ${latestYear} publications`
+        : `Show all publications (${earlierCount} earlier)`;
+      toggle.setAttribute("aria-expanded", String(isExpanded));
+    }
+
+    if (status) {
+      if (terms.length) {
+        status.textContent = visibleCount
+          ? `${paperLabel(visibleCount)} matching “${search.value.trim()}”`
+          : `No publications match “${search.value.trim()}”`;
+      } else {
+        status.textContent = isExpanded
+          ? `All ${paperLabel(rows.length)}`
+          : `${paperLabel(latestCount)} from ${latestYear}`;
+      }
+    }
+  };
+
+  search?.addEventListener("input", update);
+  toggle?.addEventListener("click", () => {
+    isExpanded = !isExpanded;
+    update();
+    if (!isExpanded) target.scrollIntoView({ block: "start" });
+  });
+
+  update();
 };
 
 const renderResearchThemes = () => {

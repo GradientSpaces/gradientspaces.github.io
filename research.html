@@ -102,7 +102,19 @@
           </div>
           <p class="note">* denotes equal contribution or supervision</p>
         </div>
+        <div class="pub-search">
+          <label class="sr-only" for="publication-search">Search publications</label>
+          <input
+            type="search"
+            id="publication-search"
+            placeholder="Search by title, author, venue, or year"
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <p class="pub-search-status" id="publication-search-status" aria-live="polite"></p>
+        </div>
         <div class="project-list" id="publication-list"></div>
+        <button class="pub-toggle" id="publication-toggle" type="button" aria-expanded="false" aria-controls="publication-list" hidden></button>
       </section>
 
       <section class="section" aria-labelledby="chapters-title">
